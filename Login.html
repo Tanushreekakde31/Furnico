@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="./login.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body >
+
+    <div class="navbar">
+        <div style="font-family: cursive;">
+            <h1 style="color: aliceblue;">Furnico.</h1>
+        </div>
+        <div class="nav-items"  style="margin-top: 12px;">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./product.html">Products</a>
+            <a href="./r1.html">Review</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-button">
+            <button type="button"><a href="./Login.html">Login</a></button>
+            <button type="button"><a href="./Signin.html">SignUp</a></button>
+        </div>
+
+    </div>
+
+    <div class="login-container" style="margin-top: 150px;">
+        <p class="head">Login with your email Id</p>
+        <input type="email" placeholder="Email Address" class="input" required>
+        <input type="password" placeholder="Password" class="input" required>
+        <input type="submit" value="LOG IN" class="btn" onclick="login()">
+        <p>Don't have an account? <a href="./Signin.html">Sign Up</a></p>
+    </div>
+    <footer class="footer" style="margin-top: 60px;">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <h3>Furnico<span>.</span></h3>
+            <p>
+              Get the latest furniture products here. we provide you all the stylish and treandy designes of the furniture that you wish to have. Decorate your home with the elegance of our unique products.
+              We are here to full fill our desires for your home decor.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Support</h4>
+            <p>FAQs</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="footer__col">
+            <h4>Address</h4>
+            <p>
+              <span>Address:</span>Furnico is a B2B Furniture selling organisation based in Nagpur since 2015.
+            </p>
+            <p><span>Email:</span> info@Furnico.com</p>
+            <p><span>Phone:</span> +91 9876543210</p>
+            <div class="social__icons" style="margin-bottom: 10px;">
+              <span><i class="ri-facebook-box-fill"></i></span>
+              <span><i class="ri-twitter-x-line"></i></span>
+              <span><i class="ri-instagram-line"></i></i></span>
+              <span><i class="ri-linkedin-fill"></i></span>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="footer__bar">
+         Copyright © 2023 Products Agency Council of India | All rights reserved.
+        </div>
+      </footer>
+    <script>
+        function login() {
+            const email = document.querySelector('input[type="email"]').value;
+            const password = document.querySelector('input[type="password"]').value;
+            if (email === "" || password === "") {
+                alert("Please fill in all fields");
+            } else {
+                alert("Logged in successfully"); 
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

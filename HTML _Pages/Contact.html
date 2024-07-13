@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./Contact.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body  style="background-color: #92a99b;">
+    <div>
+        <div class="navbar">
+            <div>
+                <h1 style="color:white; font-family: cursive;">Furnico.</h1>
+            </div>
+            <div class="nav-items" style="margin-top: 12px;">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./product.html">Products</a>
+                <a href="./r1.html">Review</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="nav-button">
+                <button type="button"><a href="./Login.html">Login</a></button>
+                <button type="button"><a href="./Signin.html">SignUp</a></button>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="left">
+                <p class="heading">Contact us and get your <br />deal of choice</p>
+                <p class="para">
+                    Get the information to start decorating your home with us.
+                    Furnik makes it easier to do what you do best -- create.
+                    Find answers to your problems to get specific help.
+                </p>
+                <input type="text" placeholder="your mail" class="inputmail" /><span class="span">Contact Us</span>
+            </div>
+            <div class="right">
+                <img src="web_images/9586999-LNAYDFYV-7.jpg" class="img" />
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="web_images/phone.png" height="40px" />
+                <p class="card-para p">Call Us</p>
+                <p class="card-para">+1120 3467 9830</p>
+                <button><a href='tel: ++1120 3467 9830'>Call Us</a></button>
+            </div>
+            <div class="card">
+                <img src="web_images/mail.png" height="40px" />
+                <p class="card-para p">Send Us An Email</p>
+                <p class="card-para">support.furnik@gmail.com</p>
+                <button><a href='mailto: support.furnik@gmail.com'>Send Email</a></button>
+            </div>
+            <div class="card">
+                <img src="web_images/chat.png" height="50px" />
+                <p class="card-para p">Live Chat With Us</p>
+                <p class="card-para">support.furnik@gmail.com</p>
+                <button><a href='mailto: support.furnik@gmail.com'>Chat With Us</a></button>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="form-sub">
+                <p>Send Us A Message</p>
+                <div class="form">
+                    <form id="contact-form">
+                        <div class="f-l-form">
+                            <label class="label label1">First Name</label>
+                            <label class="label">Last Name</label>
+                        </div>
+                        <div class="f-l-form">
+                            <input type="text" id="first-name" placeholder="Your First Name" class="form-input"
+                                style="margin-right: 135px;">
+                            <input type="text" id="last-name" placeholder="Your Last Name" class="form-input"
+                                style="width: 250px;">
+                        </div><br />
+                        <div style="margin-bottom: 10px;">
+                            <label class="label">Email</label>
+                        </div>
+                        <input type="email" id="email" placeholder="Your Email Address" class="form-input"
+                            style="margin-bottom: 20px;">
+                        <div style="margin-bottom: 10px;">
+                            <label class="label">Phone Number</label>
+                        </div>
+                        <input type="tel" id="phone" placeholder="Your Phone No" class="form-input"
+                            style="width: 477px;margin-bottom: 20px;">
+                        <div style="margin-bottom: 10px;">
+                            <label class="label">How Can We Help You</label>
+                        </div>
+                        <textarea id="message" class="form-input" style="width:477px;height: 120px;margin-bottom:10px;"
+                            placeholder="Type a Message"></textarea>
+                        <div style="font-size: 13px;margin-bottom: 30px;">
+                            <input type="checkbox" id="privacy-policy">I acknowledge that I have read Furnik's Privacy
+                            policy.
+                        </div>
+                        <input type="button" value="Get In Touch" class="form-btn" onclick="submitForm()">
+                    </form>
+                </div>
+            </div>
+            <div class="info-container">
+                <span>Furnico is always at your door</span>
+                <p>
+                    Get in touch with your problems and questions we're always<br> there to make yourself comfortable.
+                    Our 24/7 customer service <br>is always at your door.
+                </p>
+                <p style="font-weight: bold;margin-bottom: 20px;">Socialize With Us:</p>
+                <img src="web_images/icons8-gmail-48.png" height="30px" class="cont-img">
+                <img src="web_images/icons8-instagram-48.png" height="30px" class="cont-img">
+                <img src="web_images/icons8-linkedin-48.png" height="30px" class="cont-img">
+                <img src="web_images/icons8-twitter-48.png" height="30px" class="cont-img">
+
+            </div>
+        </div>
+        <div class="q-container">
+            <p class="h-q">Frequently Asked Questions</p>
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <p class="question">Q1: Why do we choose furnik for decorating our home?</p>
+                    <button class="show-answer" onclick="toggleAnswer(1)">Show Answer</button>
+                    <p class="answer hidden" id="answer1">Revok service across the world. It's trusted by many business
+                        giants, it's easy and simple interaction. Privacy is ar utmost along with 24/7 services.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="question">Q2: Is there any package to decorate my whole home?</p>
+                    <button class="show-answer" onclick="toggleAnswer(2)">Show Answer</button>
+                    <p class="answer hidden" id="answer2">Yes, there is. For more details you can contact us.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="question">Q3: What about the quality, selection and value?</p>
+                    <button class="show-answer" onclick="toggleAnswer(3)">Show Answer</button>
+                    <p class="answer hidden" id="answer3">You don't have to be worry about it as our products are of the
+                        best quality. The value depends on the product you choose.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="question">Q4: Can I customize my own furniture produts?</p>
+                    <button class="show-answer" onclick="toggleAnswer(4)">Show Answer</button>
+                    <p class="answer hidden" id="answer4">Yes, You can give us the designs that you want. We will give
+                        you the same of best quality in affordable price.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Contact.js">
+    </script>
+
+<footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3>Furnico<span>.</span></h3>
+        <p>
+          Get the latest furniture products here. we provide you all the stylish and treandy designes of the furniture that you wish to have. Decorate your home with the elegance of our unique products.
+          We are here to full fill our desires for your home decor.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Support</h4>
+        <p>FAQs</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="footer__col">
+        <h4>Address</h4>
+        <p>
+          <span>Address:</span>Furnico is a B2B Furniture selling organisation based in Nagpur since 2015.
+        </p>
+        <p><span>Email:</span> info@Furnico.com</p>
+        <p><span>Phone:</span> +91 9876543210</p>
+        <div class="social__icons" style="margin-bottom: 5px;">
+          <span><i class="ri-facebook-box-fill"></i></span>
+          <span><i class="ri-twitter-x-line"></i></span>
+          <span><i class="ri-instagram-line"></i></i></span>
+          <span><i class="ri-linkedin-fill"></i></span>
+        </div>
+      </div>
+    </div>
+    <hr style="margin-bottom: 10px;">
+    <div class="footer__bar" >
+     Copyright © 2023 Products Agency Council of India | All rights reserved.
+    </div>
+  </footer>
+
+</body>
+
+</html>
